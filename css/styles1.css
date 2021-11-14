@@ -1,37 +1,38 @@
 :root {
-    --main-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
-    --accent-color: #2196f3;
-    --a:-webkit-any-link {
-      text-decoration: none;
-    }
-  }
-  ul {
-    list-style: none;
-  } 
-  body {
-    font-family: var(--main-font);
-  }
-
-  /*===========HEADER=========*/
-
-.address {
-    font-style: normal;
-  }
-
-  .nav-list-link,
-  .header-address-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --a:-webkit-any-link {
     text-decoration: none;
   }
-  
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: var(--main-font);
+}
+/*===========HEADER=========*/
+
+.address {
+  font-style: normal;
+}
+.nav-list-link,
+.header-mail-link,
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 .nav-list-link:hover,
 .nav-list-link:focus,
-.header-address-link:hover,
-.header-address-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus,
 .buttons-list-item:hover,
 .buttons-list-item:focus {
   background: var(--accent-color);
@@ -40,11 +41,10 @@
 .nav-list-link {
   color: #212121;
 }
-
-.contacts-color {
+.header-mail-link,
+.header-tel-link {
   color: #757575;
 }
-
 .current {
   color: var(--accent-color);
 }
@@ -96,7 +96,6 @@
 }
 
 /*===========END SECTION FEATURES=========*/
-
 /*===========components=========*/
 .title {
   font-weight: 700;
@@ -106,10 +105,10 @@
   letter-spacing: 0.03em;
   color: #212121;
 }
-.logo2-header {
+.logo-studio-header {
   color: #000000;
 }
-.logo2-footer {
+.logo-studio-footer {
   color: #ffffff;
 }
 .logoweb,
@@ -124,7 +123,6 @@
 }
 
 /*=========== end components=========*/
-
 /*===========SECTION OUR TEAM=========*/
 .our-team-name {
   font-weight: 500;
@@ -133,7 +131,6 @@
   letter-spacing: 0.03em;
   color: #212121;
 }
-
 .our-team-position {
   font-weight: 400;
   font-size: 16px;
@@ -154,7 +151,8 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.footer-address-link {
+.footer-mail-link,
+.footer-tel-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
